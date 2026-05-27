@@ -4,6 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>List and table Example</title>
+  <style>
+    table,th,td{
+      background-color: aqua;
+      color: blueviolet;
+    }
+  </style>
 </head>
 <body>
 
@@ -23,7 +29,7 @@
   <h2>Fruit Table</h2>
 
   <table border="1">
-    <tr>
+    <tr style="background-color: blue; color: blueviolet;">
       <th>Fruit</th>
       <th>Color</th>
     </tr>
@@ -40,6 +46,34 @@
       <td>Orange</td>
     </tr>
   </table>
+  <h3>
+    <form>
+        <label>Full Name</label>
+        <input type="text" placeholder="Enter your name" required>
+
+        <label>Email</label>
+        <input type="email" placeholder="Enter your email" required>
+
+        <label>Password</label>
+        <input type="password" placeholder="Enter password" required>
+
+        <label>Gender</label>
+        <select required>
+            <option value="">Select Gender</option>
+            <option>Male</option>
+            <option>Female</option>
+            <option>Other</option>
+        </select>
+
+        <label>Course</label>
+        <input type="text" placeholder="Enter course name">
+
+        <label>Address</label>
+        <textarea rows="4" placeholder="Enter address"></textarea>
+
+        <button type="submit">Register</button>
+    </form>
+  </h3>
 
 </body>
 </html>
